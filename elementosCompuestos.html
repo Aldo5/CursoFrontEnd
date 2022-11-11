@@ -36,6 +36,89 @@
 
     <label for="url1">Input de URL</label><br>
     <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+    <h2> Input de selección multiple</h2>
+    <input type="checkbox" id="tooping1" name="tooping1" value="Cebolla">
+    <label for="topping1">Tacos con cebolla</label><br>
+    <input type="checkbox" id="tooping2" name="tooping2" value="Cilantro">
+    <label for="topping2">Tacos con cilantro</label><br>
+    <input type="checkbox" id="tooping3" name="tooping3" value="Salsa">
+    <label for="topping1">Tacos con salsa</label><br><br>
+    
+    <h2>Input de selección unica</h2><br>
+    <input type="radio" id="roja" name="Salsas" value="Roja">
+    <label for="Roja">Roja</label><br>
+    <input type="radio" id="verde" name="Salsas" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="guacamole" name="Salsas" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+    <hr>
+
+    <h2>Select</h2>
+    <label for="tacos">De que la orden</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+        <option value="vegetariano">Vegetariano</option>
+        
+    </select>
+
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+    
+    <hr>
+
+    <h2>input de fecha</h2>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br>
+
+    <hr>
+
+    <h2>Input de rango</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    <h2>Input de color</h2><br>
+    <input type="color" id="color1" name="color1" multiple><br><br>
+    <h2>Input de rango</h2><br>
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50" value="0"><br><br>
+    
+    <hr>
+
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <!--alert ya es javaScrip que nos manda una alerta-->
+    <input type="button" id="boton1" name="boton1" value="Botón 1" oneclick="alert('Bienvenidos explorers');"><br><br>
+
+    <hr>
+    <!-- Formularios -->
+
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/action.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
      
 </body>
 </html>
